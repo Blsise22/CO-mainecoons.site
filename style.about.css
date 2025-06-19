@@ -1,0 +1,219 @@
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+background-image:url(g.jpg);
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    background-color:white; /* Light background for contrast */
+    min-height: 100vh; /* Ensure body covers full viewport height */
+    word-spacing: 5px;
+    background-pisition:center;
+   line-height:1.5 ;
+   
+    
+}
+        
+        
+        
+        header {
+    position: sticky; /* Make header sticky */
+    top: 0; /* Stick to the top */
+    background: green; /* Darker background for the header */
+    color: #fff; /* White text for contrast */
+    z-index: 1000; /* Keep it above other content */
+    padding: 5px 10px; /* Increased padding for a heavier look */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+}
+
+.menu-container {
+    position: fixed; /* Position menu fixed for sidebar */
+    top: 0;
+    left: -200px; /* Start hidden */
+    width: 200px; /* Width of the sidebar */
+    height: 100%; /* Full height */
+    background-color: rgba(47, 47, 47, 0.8); /* Slightly lighter for the menu */
+    transition: left 0.5s ease; /* Smooth transition */
+    z-index: 999; /* Ensure it appears above other content */
+    padding-top: 10px; /* Padding for the top */
+}
+
+.menu-container.show {
+    left: 0; /* Show menu when active */
+}
+
+.menu-container ul {
+    list-style: none;
+    padding: 20px 0;
+}
+
+.menu-container ul li {
+    color: #fff; /* White text for menu items */
+}
+
+.menu-container ul li a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make the anchor a block element */
+    padding: 15px 20px; /* Padding for spacing */
+}
+
+.menu-container ul li a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Background on hover for emphasis */
+}
+
+.top-icons {
+    margin-left: auto; /* Align hamburger to the right */
+}
+
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    margin-left: 20px; /* Spacing from icons */
+}
+
+.hamburger span {
+    display: block;
+    height: 4px;
+    background: #fff; /* White for visibility */
+    border-radius: 2px;
+}
+
+.close-btn {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    color: #fff; /* White for visibility */
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 20px; /* Margin for spacing */
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the logo and tagline */
+    text-align: center; /* Center text */
+}
+
+.logoheader {
+    width: 90px;
+    height: 70px;
+}
+
+.logo-h1 {
+    color: #fff; /* White for visibility */
+    font-size: 24px; /* Adjust the logo font size */
+}
+
+.tica-link {
+    font-size: 16px; /* Set font size to 16px */
+    color: white; /* Visible blue color for the link */
+    text-align: center;
+}
+
+.tica-link a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.tica-link a:hover {
+    text-decoration: underline; /* Underline on hover for emphasis */
+    
+}
+
+
+
+
+
+
+/*  main content  */
+.firstdivaboutcoon{
+   background-color:#003366;
+    width:100%;
+    text-align:center;
+    color:white;
+    p{
+        text-align:left;
+        padding-left:9px;
+    }
+    .h4about{
+        color: #00ffff;
+    }
+}
+
+.ppadding{
+    border-left:5px solid green;
+    margin-left:4px;
+}
+
+  
+.styled-box-div{
+    width:90%;
+   background-color: #e0e0e0; /* soft gray */
+    padding: 20px;            /* space inside the box */
+    border-radius: 12px;      /* rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* soft shadow */
+    font-weight: 500;         /* medium font weight */
+    max-width: 600px;         /* optional: max width */
+    margin: 20px auto;        /* center horizontally with spacing */
+    color: #333;              /* dark gray text for contrast */
+    font-family: 'Segoe UI', sans-serif; /* modern font */
+  }
+
+
+.origin-main{
+    background-color:white;
+    display: flex; 
+    align-items: center;
+    min-height: 50vh;
+    justify-content: center;
+  
+    
+}
+
+ .kitten-originh1{
+     font-weight:325;
+     text-align:center;
+     font-size:25px;
+     text-shadow:0.5px 0.5px 2px gray;
+     
+ }
+ 
+.responsive-image-container {
+  width: 90%;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background-color: #fefefe;
+  text-align: center;
+}
+
+.responsive-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+/* botten on about breeed page */
+
+
+@keyframes shine {
+  0% { box-shadow: 0 0 2px #004d40; }
+  50% { box-shadow: 0 0 8px #004d40; }
+  100% { box-shadow: 0 0 2px #004d40; }
+}

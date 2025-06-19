@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style2.css">
+  <title>Kitten Adoption</title>
+</head>
+<body>
+    
+   
+    
+<!-- header start -->
+   <header>
+        <div class="menu-container" id="mobileMenu">
+            <button class="close-btn" onclick="toggleMenu()" id="closeBtn">&#10005;</button>
+            <ul>
+                <li><a href="main-home-page.html">Home</a></li>
+                <li><a href="about-breed.html">About Maine Coon</a></li>
+                <li><a href="us.about.html">About Us</a></li>
+                <li><a href="adoption-conditions.html"> Adoption Conditions</a></li>
+                <li><a href="Adoption-process.html">Adoption Process</a></li>
+                <li><a href="kittens-for-adoption.html">kittens For Adoption</a></li>
+                <li><a href="contract.html"> Contract</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="top-icons">
+            <div class="hamburger" onclick="toggleMenu()" id="hamburgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo" class="logoheader">
+            <h1 class="logo-h1"></h1>
+            <div class="tica-link">
+                <a href="us.about.html">The International Cat Association, Inc.® (TICA®) <span>&rarr;</span></a>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    
+<!-- Contact Bar (scrolls normally with content) -->
+<div class="top-contact-bar">
+  <a href="https://wa.me/1234567890" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#25D366" viewBox="0 0 24 24">
+      <path d="M20.52 3.48a12.33 12.33 0 0 0-17.44 0 12.33 12.33 0 0 0-2.83 13.01L0 24l7.67-2.02a12.32 12.32 0 0 0 5.94 1.52c3.3 0 6.4-1.28 8.73-3.6 4.82-4.82 4.82-12.64 0-17.46ZM12.61 21.06a10.31 10.31 0 0 1-5.26-1.45l-.38-.22-4.56 1.2 1.22-4.45-.24-.39a10.29 10.29 0 0 1 15.64-12.09 10.3 10.3 0 0 1-6.42 17.4Zm5.7-7.77c-.31-.16-1.84-.9-2.12-1-.28-.1-.48-.16-.67.16s-.77 1-.95 1.2-.35.22-.66.06-1.28-.47-2.44-1.51c-.9-.8-1.51-1.78-1.68-2.07-.17-.29-.02-.45.13-.6.13-.13.29-.35.43-.52.14-.18.19-.3.29-.5.1-.2.05-.38-.02-.54-.07-.16-.67-1.61-.91-2.2-.24-.58-.49-.5-.66-.5-.17 0-.37 0-.57 0s-.53.08-.8.38c-.28.3-1.06 1.03-1.06 2.5s1.09 2.9 1.24 3.1c.15.2 2.15 3.28 5.21 4.6.73.31 1.29.49 1.73.62.72.23 1.38.2 1.9.12.58-.09 1.84-.75 2.1-1.47.26-.73.26-1.35.18-1.47-.08-.13-.29-.21-.6-.37Z"/>
+    </svg>
+    +1 (234) 567-890
+  </a>
+  <span class="separator">|</span>
+  <a href="mailto:yourname@gmail.com">📧 yourname@gmail.com</a>
+</div>
+<!--contact bar end -->
+
+
+
+  <div class="filter-buttons">
+    <button class="filter-button active" onclick="filterKittens('all')">All</button>
+    <button class="filter-button" onclick="filterKittens('available')">Available</button>
+    <button class="filter-button" onclick="filterKittens('reserved')">Reserved</button>
+    <button class="filter-button" onclick="filterKittens('optional')">Optional</button>
+    <button class="filter-button" onclick="filterKittens('adopted')">Adopted</button>
+    <button class="filter-button" onclick="filterKittens('observation')">Observation</button>
+  </div>
+  
+  
+
+  <div id="kittens-container"></div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <div class="modal-info">
+        <h4>Kitten Information</h4>
+        <p id="modalDescription"></p>
+        <input type="text" id="kittenId" placeholder="Kitten ID" readonly required />
+      </div>
+      <form class="order-form" id="orderForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="text" placeholder="Home Address" required />
+        <input type="text" placeholder="WhatsApp Number" required />
+        <input type="email" placeholder="Email" required />
+        <input type="text" placeholder="Country" required />
+        <input type="text" placeholder="State" required />
+        <textarea rows="4" placeholder="Reason for Adoption" required></textarea>
+        <button type="submit">Submit Order</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script-header.js"></script>
+  <script src="senders.js"></script>
+</body>
+</html>

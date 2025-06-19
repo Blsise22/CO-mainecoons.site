@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+background-image:url(bg.jpg);
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    background-color:#; /* Light background for contrast */
+    min-height: 100vh; /* Ensure body covers full viewport height */
+    word-spacing: 5px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-pisition:center;
+    word-spacing:5px;
+    
+}
+
+header {
+    position: sticky; /* Make header sticky */
+    top: 0; /* Stick to the top */
+    background: green; /* Darker background for the header */
+    color: #fff; /* White text for contrast */
+    z-index: 1000; /* Keep it above other content */
+    padding: 5px 10px; /* Increased padding for a heavier look */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+}
+
+.menu-container {
+    position: fixed; /* Position menu fixed for sidebar */
+    top: 0;
+    left: -250px; /* Start hidden */
+    width: 250px; /* Width of the sidebar */
+    height: 100%; /* Full height */
+    background-color: rgba(47, 47, 47, 0.8); /* Slightly lighter for the menu */
+    transition: left 0.5s ease; /* Smooth transition */
+    z-index: 999; /* Ensure it appears above other content */
+    padding-top: 10px; /* Padding for the top */
+}
+
+.menu-container.show {
+    left: 0; /* Show menu when active */
+}
+
+.menu-container ul {
+    list-style: none;
+    padding: 20px 0;
+}
+
+.menu-container ul li {
+    color: #fff; /* White text for menu items */
+}
+
+.menu-container ul li a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make the anchor a block element */
+    padding: 15px 20px; /* Padding for spacing */
+}
+
+.menu-container ul li a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Background on hover for emphasis */
+}
+
+.top-icons {
+    margin-left: auto; /* Align hamburger to the right */
+}
+
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    margin-left: 20px; /* Spacing from icons */
+}
+
+.hamburger span {
+    display: block;
+    height: 4px;
+    background: #fff; /* White for visibility */
+    border-radius: 2px;
+}
+
+.close-btn {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    color: #fff; /* White for visibility */
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 20px; /* Margin for spacing */
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the logo and tagline */
+    text-align: center; /* Center text */
+}
+
+.logoheader {
+    width: 90px;
+    height: 70px;
+}
+
+.logo-h1 {
+    color: #fff; /* White for visibility */
+    font-size: 24px; /* Adjust the logo font size */
+}
+
+.tica-link {
+    font-size: 16px; /* Set font size to 16px */
+    color: white; /* Visible blue color for the link */
+    text-align: center;
+}
+
+.tica-link a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.tica-link a:hover {
+    text-decoration: underline; /* Underline on hover for emphasis */
+}
+/* header end */
+
+
+/* Whatsapp logo link*/
+.whatsapp-icon {
+            position: fixed;
+            right: 20px;
+            bottom: 50%;
+            transform: translateY(50%);
+            z-index: 1000;
+        }
+        .whatsapp-icon img {
+            width: 40px; /* Adjust size as needed */
+            height: auto;
+        }
+/* Whatsapp logo link end*/
+
+
+
+
+
+
+
+
+/* Main section styles */
+.maindiv1 {
+    background-color: rgba(66, 227, 234, 0.9);
+    width: 100%;
+}
+
+main {
+    padding: 20px; /* Add padding for main content */
+    margin-top: 20px; /* Space below the header */
+    text-align: center;
+    width: 100%;
+}
+
+section {
+    max-width: 800px; /* Max width for content */
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .close-btn {
+        display: block; /* Show close button on mobile */
+    }
+
+    .menu-container ul {
+        padding: 0; /* Remove padding on mobile */
+    }
+
+    .menu-container ul li a {
+        font-size: 16px; /* Smaller font size for mobile */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* begins here*/
+
+
+
+
+/* this is where it begins */
+
+.firstdiv{
+    background-color:rgba(66, 227, 234, 0.7);
+    width:100%;
+    height:auto;
+    margin-top:150px;
+    text-align:center;
+}
+
+p{
+    line-height:1.6;
+    text-align:left;
+    margin-left:15px;
+    font-weight:650;
+    
+}
+
+.li1{
+    line-height:1.6;
+    text-align:left;
+    color:white;
+    padding-left:7px;
+    font-weight:650; 
+}
+.li2{
+    line-height:1.6;
+    text-align:left;
+   font-weight:650;
+    color:white;
+    padding-left:7px;
+    
+}
+
+
+.firsth1{
+    padding-top=40px;
+    color:white;
+}
+
+.wonder{
+    color: #00aaff;
+}
+
+.specialp{
+    border-left:4px solid blue;
+    color:white;
+    margin-left:4px;
+    padding-left:4px;
+}
+
+.wonderfullmaincoon{
+    background-color:white;
+}
+
+summary{
+    color:red;
+}
+
+.specialp2{
+    border-left:4px solid blue;
+    color: #00aaff;
+    margin-left:4px;
+    padding-left:4px;
+}
+
+ .firsthr{
+     height:7px;
+     background-color:white;
+ }
+ 
+ .seconmaindiv-explanations{
+     background-color:white;
+ }
+ 
+ li{
+     text-align:left;
+     margin-left:10px;
+ }
+ 
+ .h4comes{
+     font-weight:325;
+     text-align:center;
+     font-size:25px;
+     text-shadow:0.5px 0.5px 2px gray;
+     
+ }
+ 
+ .chaton {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 15px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+ 
+ .chatons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+/* for video */
+.responsive-video-container {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background-color: #000;
+  overflow: hidden;
+}
+
+.responsive-video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+/* end */
+.chaton video {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+
+
+
+
+/* slide shop best kitten*/
+/* Container for the slideshow */
+
+/* Main container */
+.allbestki {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color:black;
+}
+
+.forbestki {
+  text-align: center;
+}
+
+.wonder {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Carousel styles */
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  width: 100%;
+}
+
+.carousel-track img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Responsive heading */
+@media (max-width: 768px) {
+  .wonder {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .wonder {
+    font-size: 1.2rem;
+  }
+}
+
+      /* end */

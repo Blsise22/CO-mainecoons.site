@@ -1,0 +1,278 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(bg.jpg);
+  font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  word-spacing: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Header Styles */
+header {
+  position: sticky;
+  top: 0;
+  background: green;
+  color: #fff;
+  z-index: 1000;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background-color: rgba(47, 47, 47, 0.8);
+  transition: left 0.5s ease;
+  z-index: 999;
+  padding-top: 10px;
+}
+
+.menu-container.show {
+  left: 0;
+}
+
+.menu-container ul {
+  list-style: none;
+  padding: 20px 0;
+}
+
+.menu-container ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 20px;
+}
+
+.menu-container ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.top-icons {
+  margin-left: auto;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  margin-left: 20px;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.close-btn {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logoheader {
+  width: 90px;
+  height: 70px;
+}
+
+.logo-h1 {
+  color: #fff;
+  font-size: 24px;
+}
+
+.tica-link {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+
+.tica-link a {
+  color: white;
+  text-decoration: none;
+}
+
+.tica-link a:hover {
+  text-decoration: underline;
+}
+/* header end */
+
+
+/* contact bar */
+.top-contact-bar {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 4px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  border-bottom: 1px solid #ccc;
+  line-height: 1.4;
+}
+
+.top-contact-bar a {
+  color: #25D366;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.top-contact-bar a:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  color: #888;
+}
+/* contact bar end*/
+
+
+/* main content */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2b2b2b;
+  background-color: #f9f9f9;
+}
+
+.adoption-wrapper {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #283593;
+  margin-bottom: 1rem;
+  border-left: 5px solid #5c6bc0;
+  padding-left: 10px;
+}
+
+.intro {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.step {
+  margin-bottom: 1.8rem;
+}
+
+.step h3 {
+  font-size: 1.2rem;
+  color: #37474f;
+  margin-bottom: 0.5rem;
+}
+
+.step p {
+  line-height: 1.6;
+}
+
+.step a {
+  color: #1e88e5;
+  text-decoration: none;
+}
+
+.step a:hover {
+  text-decoration: underline;
+}
+
+.deposit blockquote {
+  background-color: #e3f2fd;
+  padding: 1rem;
+  border-left: 5px solid #2196f3;
+  margin-top: 1rem;
+  border-radius: 6px;
+  font-style: italic;
+}
+
+.note-title {
+  font-weight: bold;
+  color: #1565c0;
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+ul li {
+  line-height: 1.6;
+  list-style-type: disc;
+}
+
+.important {
+  background-color: #fff3cd;
+  padding: 1rem 1.5rem;
+  border-left: 5px solid #ffc107;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.important h4 {
+  margin-bottom: 0.8rem;
+  color: #856404;
+}
+
+.closing {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.closing h3 {
+  color: #4caf50;
+}
+
+@media screen and (max-width: 600px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .intro,
+  .step h3,
+  .step p,
+  .important h4,
+  .closing p {
+    font-size: 0.95rem;
+  }
+}

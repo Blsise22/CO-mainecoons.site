@@ -1,0 +1,178 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  word-spacing: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Header Styles */
+header {
+  position: sticky;
+  top: 0;
+  background: green;
+  color: #fff;
+  z-index: 1000;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: rgba(47, 47, 47, 0.8);
+  transition: left 0.5s ease;
+  z-index: 999;
+  padding-top: 10px;
+}
+
+.menu-container.show {
+  left: 0;
+}
+
+.menu-container ul {
+  list-style: none;
+  padding: 20px 0;
+}
+
+.menu-container ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 20px;
+}
+
+.menu-container ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.top-icons {
+  margin-left: auto;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  margin-left: 20px;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.close-btn {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logoheader {
+  width: 90px;
+  height: 70px;
+}
+
+.logo-h1 {
+  color: #fff;
+  font-size: 24px;
+}
+
+.tica-link {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+
+.tica-link a {
+  color: white;
+  text-decoration: none;
+}
+
+.tica-link a:hover {
+  text-decoration: underline;
+}
+/* header end */
+
+
+/* privacy policy */
+
+
+        body {
+            background-color: #e9ecef; /* Light gray background for the body */
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: #ffffff; /* White background for the main content */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 1.5rem;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+        .animated-text {
+            opacity: 0; /* Start hidden */
+            transform: translateY(20px); /* Start slightly below */
+            animation: fadeInUp 0.6s forwards; /* Animation */
+            margin: 0; /* Reset margin for paragraphs */
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1; /* Fade in */
+                transform: translateY(0); /* Slide up */
+            }
+        }
+        /* Apply staggered animations */
+        .animated-text:nth-child(1) { animation-delay: 0.1s; }
+        .animated-text:nth-child(2) { animation-delay: 0.2s; }
+        .animated-text:nth-child(3) { animation-delay: 0.3s; }
+        .animated-text:nth-child(4) { animation-delay: 0.4s; }
+        .animated-text:nth-child(5) { animation-delay: 0.5s; }
+        .animated-text:nth-child(6) { animation-delay: 0.6s; }
+        .animated-text:nth-child(7) { animation-delay: 0.7s; }
+        .animated-text:nth-child(8) { animation-delay: 0.8s; }
+        .animated-text:nth-child(9) { animation-delay: 0.9s; }
+        .animated-text:nth-child(10) { animation-delay: 1.0s; }
+    
